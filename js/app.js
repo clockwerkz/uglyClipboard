@@ -13,12 +13,6 @@ var isDone = false;
 var workouts = ["Jumping Jacks", "Push Ups", "Bear Crawls"]
 var masterTime=workouts.length;
 function countdown() {
-	stopwatch.innerHTML = time--;
-	if (time === 0) {
-		clearInterval(timerCountdown);
-	}
-}
-	/*
 	stopwatch.innerHTML = (time===0) ? "Finished!" : time;
 	if (time===2 || time===1) {
 		lowBeep.play();
@@ -47,6 +41,6 @@ function countdown() {
 	
 }
 workoutName.innerHTML = workouts[workouts.length-masterTime];
-*/
-var timerCountdown = setInterval(countdown, 500);
+
+var timerCountdown = setInterval(countdown, 1000);
 
