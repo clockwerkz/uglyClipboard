@@ -12,13 +12,18 @@ var isDone = false;
 const workouts = ["Jumping Jacks", "Push Ups", "Bear Crawls"]
 var masterTime=workouts.length;
 function countdown() {
+	stopwatch.innerHTML = time--;
+	if (time === 0) {
+		clearInterval(timerCountdown);
+	}
+	/*
 	stopwatch.innerHTML = (time===0) ? "Finished!" : time;
-/*	if (time===2 || time===1) {
+	if (time===2 || time===1) {
 		lowBeep.play();
 	}
-	*/
+	
 	if (time===0 && !isDone){
-//		highBeep.play();
+		highBeep.play();
 		if (rest && !isDone) {
 			masterTime--;
 			workoutName.innerHTML = workouts[workouts.length-masterTime];
@@ -37,7 +42,8 @@ function countdown() {
 		clearInterval(timerCountdown);
 		stopwatch.innerHTML="FINISHED";
 	}
+	*/
 }
 workoutName.innerHTML = workouts[workouts.length-masterTime];
-var timerCountdown = setInterval(countdown, 1000);
+var timerCountdown = setInterval(countdown, 500);
 
