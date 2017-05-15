@@ -2,9 +2,8 @@
 var stopwatch = document.getElementById('stopwatch');
 var workoutName = document.getElementById('workoutName');
 
-var lowBeep = document.getElementById('lowBeep');
-var highBeep = document.getElementById('highBeep');
-console.log(stopwatch);
+var lowBeep = new Audio('sounds/low_beep.wav');
+var highBeep = new Audio('sounds/high_beep.wav');
 repTime = 15;
 restTime = 5;
 var time = repTime;
