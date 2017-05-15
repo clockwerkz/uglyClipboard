@@ -2,7 +2,6 @@
 var stopwatch = document.getElementById('stopwatch');
 var workoutName = document.getElementById('workoutName');
 
-stopwatch.innerHTML = "iPad Test";
 var lowBeep = document.getElementById('lowBeep');
 var highBeep = document.getElementById('highBeep');
 console.log(stopwatch);
@@ -18,6 +17,7 @@ function countdown() {
 	if (time === 0) {
 		clearInterval(timerCountdown);
 	}
+}
 	/*
 	stopwatch.innerHTML = (time===0) ? "Finished!" : time;
 	if (time===2 || time===1) {
