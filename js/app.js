@@ -1,8 +1,8 @@
 //console.log("Works");
-const stopwatch = document.querySelector('#stopwatch');
-const workoutName = document.querySelector('#workoutName');
-//const lowBeep = document.querySelector('#lowBeep');
-//const highBeep = document.querySelector('#highBeep');
+const stopwatch = document.getElementById('stopwatch');
+const workoutName = document.getElementById('workoutName');
+//const lowBeep = document.getElementById('lowBeep');
+//const highBeep = document.getElementById('highBeep');
 console.log(stopwatch);
 repTime = 15;
 restTime = 5;
