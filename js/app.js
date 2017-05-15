@@ -1,6 +1,8 @@
 //console.log("Works");
 const stopwatch = document.getElementById('stopwatch');
 const workoutName = document.getElementById('workoutName');
+
+stopwatch.innerHTML = "iPad Test";
 //const lowBeep = document.getElementById('lowBeep');
 //const highBeep = document.getElementById('highBeep');
 console.log(stopwatch);
@@ -44,6 +46,6 @@ function countdown() {
 	}
 	*/
 }
-workoutName.innerHTML = workouts[workouts.length-masterTime];
-var timerCountdown = setInterval(countdown, 500);
+//workoutName.innerHTML = workouts[workouts.length-masterTime];
+//var timerCountdown = setInterval(countdown, 500);
 
