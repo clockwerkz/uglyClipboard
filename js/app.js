@@ -3,15 +3,15 @@ var stopwatch = document.getElementById('stopwatch');
 var workoutName = document.getElementById('workoutName');
 
 stopwatch.innerHTML = "iPad Test";
-/*const lowBeep = document.getElementById('lowBeep');
-const highBeep = document.getElementById('highBeep');
+var lowBeep = document.getElementById('lowBeep');
+var highBeep = document.getElementById('highBeep');
 console.log(stopwatch);
 repTime = 15;
 restTime = 5;
 var time = repTime;
 var rest = false;
 var isDone = false;
-const workouts = ["Jumping Jacks", "Push Ups", "Bear Crawls"]
+var workouts = ["Jumping Jacks", "Push Ups", "Bear Crawls"]
 var masterTime=workouts.length;
 function countdown() {
 	stopwatch.innerHTML = time--;
@@ -44,8 +44,9 @@ function countdown() {
 		clearInterval(timerCountdown);
 		stopwatch.innerHTML="FINISHED";
 	}
-	*/
-//}
-//workoutName.innerHTML = workouts[workouts.length-masterTime];
-//var timerCountdown = setInterval(countdown, 500);
+	
+}
+workoutName.innerHTML = workouts[workouts.length-masterTime];
+*/
+var timerCountdown = setInterval(countdown, 500);
 
