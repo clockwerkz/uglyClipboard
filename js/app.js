@@ -1,10 +1,10 @@
 //console.log("Works");
-const stopwatch = document.getElementById('stopwatch');
-const workoutName = document.getElementById('workoutName');
+var stopwatch = document.getElementById('stopwatch');
+var workoutName = document.getElementById('workoutName');
 
 stopwatch.innerHTML = "iPad Test";
-//const lowBeep = document.getElementById('lowBeep');
-//const highBeep = document.getElementById('highBeep');
+/*const lowBeep = document.getElementById('lowBeep');
+const highBeep = document.getElementById('highBeep');
 console.log(stopwatch);
 repTime = 15;
 restTime = 5;
@@ -45,7 +45,7 @@ function countdown() {
 		stopwatch.innerHTML="FINISHED";
 	}
 	*/
-}
+//}
 //workoutName.innerHTML = workouts[workouts.length-masterTime];
 //var timerCountdown = setInterval(countdown, 500);
 
