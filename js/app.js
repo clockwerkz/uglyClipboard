@@ -2,7 +2,8 @@
 var stopwatch = document.getElementById('stopwatch');
 var workoutName = document.getElementById('workoutName');
 
-var lowBeep,highBeep;
+var lowBeep = new Audio('sounds/low_beep.wav');
+var highBeep = new Audio('sounds/high_beep.wav');
 var repTime = 5;
 var restTime = 5;
 var time = repTime;
@@ -11,10 +12,6 @@ var isDone = false;
 var workouts = ["Jumping Jacks", "Push Ups", "Bear Crawls"]
 var masterTime=workouts.length;
 
-function setup(){
-	lowBeep = loadSound('sounds/low_beep.wav');
-	highBeep = loadSound('sounds/high_beep.wav');
-}
 
 function countdown() {
 	stopwatch.innerHTML = (time===0) ? "Finished!" : time;
